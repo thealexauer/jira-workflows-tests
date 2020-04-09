@@ -1,7 +1,9 @@
 PATH
   remote: .
   specs:
-    workflows (0.1.0)
+    workflows (0.1.1)
+      httparty
+      rake
 
 GEM
   remote: https://rubygems.org/
@@ -59,7 +61,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.4)
-    rake (12.3.3)
+    rake (13.0.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -107,10 +109,8 @@ DEPENDENCIES
   dotenv
   guard
   guard-rspec
-  httparty (~> 0.18.0)
   multi_json
   pry
-  rake (~> 12.0)
   rspec
   rspec-nc
   vcr
