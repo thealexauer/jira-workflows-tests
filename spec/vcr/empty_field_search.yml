@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support-test.wu.ac.at/rest/api/2/customFields?search=Duration
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic <AUTH DATA>
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Thu, 09 Apr 2020 16:41:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Arequestid:
+      - 1121x12426x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-11751636
+      Set-Cookie:
+      - JSESSIONID=C36E164B01017F80BE0E81E434E0FFE0; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BAQ2-88TF-EPN8-LT8O_6346a75d962ef33435bfd39ac704407fb0c4dfd2_lin;
+        Path=/; Secure
+      X-Seraph-Loginreason:
+      - OK
+      X-Asessionid:
+      - liumuh
+      X-Ausername:
+      - admin
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      - public
+      Vary:
+      - User-Agent
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Cache-Status:
+      - MISS
+      X-Proxy-Cache:
+      - MISS
+      Pragma:
+      - public
+    body:
+      encoding: UTF-8
+      string: '{"maxResults":50,"startAt":0,"total":2,"isLast":true,"values":[{"id":"customfield_10510","name":"Duration","description":"WU:
+        Duration (events)","type":"Text Field (single line)","searcherKey":"Duration","self":"https://support-test.wu.ac.at/rest/api/2/customFields/customfield_10510","numericId":10510,"isLocked":false,"isManaged":false,"isAllProjects":true,"projectsCount":0,"screensCount":3},{"id":"customfield_13706","name":"Event
+        Duration","type":"Select List (single choice)","searcherKey":"Event Duration","self":"https://support-test.wu.ac.at/rest/api/2/customFields/customfield_13706","numericId":13706,"isLocked":false,"isManaged":false,"isAllProjects":true,"projectsCount":0,"screensCount":6}]}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 16:41:43 GMT
+recorded_with: VCR 5.1.0

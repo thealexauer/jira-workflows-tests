@@ -1,0 +1,148 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support-test.wu.ac.at/rest/api/2/issue/IT-31696/transitions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic <AUTH DATA>
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Thu, 09 Apr 2020 18:01:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Arequestid:
+      - 1201x13626x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-11751636
+      Set-Cookie:
+      - JSESSIONID=6F06967FFAE4956A7A80CEFF14BE3DA2; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BAQ2-88TF-EPN8-LT8O_545093586ad09993db418a53764b816794d88e68_lin;
+        Path=/; Secure
+      X-Seraph-Loginreason:
+      - OK
+      X-Asessionid:
+      - fqjbbb
+      X-Ausername:
+      - admin
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      - public
+      Vary:
+      - User-Agent
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Cache-Status:
+      - MISS
+      X-Proxy-Cache:
+      - MISS
+      Pragma:
+      - public
+    body:
+      encoding: UTF-8
+      string: '{"expand":"transitions","transitions":[{"id":"981","name":"Assign to
+        me","to":{"self":"https://support-test.wu.ac.at/rest/api/2/status/3","description":"","iconUrl":"https://support-test.wu.ac.at/images/icons/statuses/inprogress.png","name":"In
+        Progress","id":"3","statusCategory":{"self":"https://support-test.wu.ac.at/rest/api/2/statuscategory/4","id":4,"key":"indeterminate","colorName":"yellow","name":"In
+        Progress"}}},{"id":"901","name":"Cancel","to":{"self":"https://support-test.wu.ac.at/rest/api/2/status/10004","description":"","iconUrl":"https://support-test.wu.ac.at/images/icons/status_generic.gif","name":"Cancelled","id":"10004","statusCategory":{"self":"https://support-test.wu.ac.at/rest/api/2/statuscategory/3","id":3,"key":"done","colorName":"green","name":"Done"}}},{"id":"1091","name":"On
+        Hold","to":{"self":"https://support-test.wu.ac.at/rest/api/2/status/10201","description":"","iconUrl":"https://support-test.wu.ac.at/images/icons/statuses/generic.png","name":"On
+        Hold","id":"10201","statusCategory":{"self":"https://support-test.wu.ac.at/rest/api/2/statuscategory/2","id":2,"key":"new","colorName":"blue-gray","name":"To
+        Do"}}}]}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 18:01:37 GMT
+- request:
+    method: post
+    uri: https://support-test.wu.ac.at/rest/api/2/issue/IT-31696/transitions
+    body:
+      encoding: UTF-8
+      string: transition[id]=901
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic <AUTH DATA>
+  response:
+    status:
+      code: 400
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Thu, 09 Apr 2020 18:01:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Arequestid:
+      - 1201x13627x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-11751636
+      Set-Cookie:
+      - JSESSIONID=E5951EACFEAFE2DA822F365C8E701E46; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BAQ2-88TF-EPN8-LT8O_bdd19019ff2251fc15562a00860497f82f857943_lin;
+        Path=/; Secure
+      X-Seraph-Loginreason:
+      - OK
+      X-Asessionid:
+      - a825ya
+      X-Ausername:
+      - admin
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      Vary:
+      - User-Agent
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"errorMessages":["Unrecognized token ''transition'': was expecting
+        ''null'', ''true'', ''false'' or NaN\n at [Source: org.apache.catalina.connector.CoyoteInputStream@3f433303;
+        line: 1, column: 12]"]}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 18:01:37 GMT
+recorded_with: VCR 5.1.0

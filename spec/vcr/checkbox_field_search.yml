@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support-test.wu.ac.at/rest/api/2/customFields?search=Additional%20information%20media%20equipment%20for%20events
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic <AUTH DATA>
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Thu, 09 Apr 2020 16:51:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Arequestid:
+      - 1131x12507x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-11751636
+      Set-Cookie:
+      - JSESSIONID=78D261BDEBDFFDB79CF342E6E90F818E; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BAQ2-88TF-EPN8-LT8O_88389d081f41023905837d544c8c974fa84cba5e_lin;
+        Path=/; Secure
+      X-Seraph-Loginreason:
+      - OK
+      X-Asessionid:
+      - 19bovoy
+      X-Ausername:
+      - admin
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      - public
+      Vary:
+      - User-Agent
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Cache-Status:
+      - MISS
+      X-Proxy-Cache:
+      - MISS
+      Pragma:
+      - public
+    body:
+      encoding: UTF-8
+      string: '{"maxResults":50,"startAt":0,"total":1,"isLast":true,"values":[{"id":"customfield_12103","name":"Additional
+        information media equipment for events","description":"WU: Additional information
+        media equipment for events","type":"Checkboxes","searcherKey":"Additional
+        information media equipment for events","self":"https://support-test.wu.ac.at/rest/api/2/customFields/customfield_12103","numericId":12103,"isLocked":false,"isManaged":false,"isAllProjects":true,"projectsCount":0,"screensCount":3}]}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 16:51:42 GMT
+recorded_with: VCR 5.1.0
