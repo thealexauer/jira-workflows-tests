@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support-test.wu.ac.at/rest/api/2/issue/TEST-1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic <AUTH DATA>
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Thu, 09 Apr 2020 18:51:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Arequestid:
+      - 1251x14329x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-11751636
+      Set-Cookie:
+      - JSESSIONID=A608D5E87F2A0B5E6BEADF19ED8E9C31; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BAQ2-88TF-EPN8-LT8O_a810278a45f4a236315cf66dcc803bae0816d108_lin;
+        Path=/; Secure
+      X-Seraph-Loginreason:
+      - OK
+      X-Asessionid:
+      - licsg2
+      X-Ausername:
+      - admin
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      - public
+      Vary:
+      - User-Agent
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Cache-Status:
+      - MISS
+      X-Proxy-Cache:
+      - MISS
+      Pragma:
+      - public
+    body:
+      encoding: UTF-8
+      string: '{"expand":"renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations","id":"97161","self":"https://support-test.wu.ac.at/rest/api/2/issue/97161","key":"TEST-1","fields":{"customfield_13102":null,"customfield_13101":null,"resolution":{"self":"https://support-test.wu.ac.at/rest/api/2/resolution/10001","id":"10001","description":"This
+        issue was canceled by customer or agent.","name":"Cancelled"},"customfield_12930":null,"customfield_10510":null,"customfield_10500":null,"customfield_12921":null,"customfield_12800":null,"customfield_11831":null,"customfield_12920":null,"customfield_12923":null,"customfield_12922":1.0,"customfield_12925":null,"customfield_10506":null,"customfield_12927":null,"customfield_10507":null,"customfield_12926":null,"customfield_10508":null,"customfield_12929":null,"customfield_12928":null,"lastViewed":null,"customfield_12120":null,"customfield_12123":null,"customfield_12002":null,"customfield_12001":null,"customfield_12122":null,"customfield_12004":null,"customfield_12003":null,"customfield_12124":null,"customfield_11830":null,"labels":[],"customfield_11700":null,"customfield_11821":null,"customfield_12118":null,"customfield_12910":null,"customfield_11820":null,"customfield_12117":null,"customfield_11823":null,"customfield_12912":null,"customfield_11701":null,"customfield_11822":null,"customfield_12119":null,"customfield_12911":null,"customfield_11825":null,"customfield_12914":null,"customfield_11824":null,"customfield_12913":null,"customfield_12916":null,"customfield_12915":null,"customfield_11829":null,"customfield_11828":null,"customfield_12917":null,"issuelinks":[],"customfield_12919":null,"assignee":null,"components":[],"customfield_12110":null,"customfield_12112":null,"customfield_12111":null,"customfield_13200":{"self":"https://support-test.wu.ac.at/rest/api/2/customFieldOption/14601","value":"Someone
+        else","id":"14601"},"customfield_12114":null,"customfield_12113":null,"customfield_12116":null,"customfield_12115":null,"customfield_10720":null,"customfield_12107":null,"customfield_10600":null,"customfield_10721":null,"customfield_12106":null,"customfield_10601":null,"customfield_11812":null,"customfield_12109":null,"customfield_12901":null,"customfield_11811":null,"customfield_12108":null,"customfield_12900":null,"customfield_12903":null,"customfield_12902":null,"customfield_11816":null,"customfield_12904":null,"customfield_11818":null,"customfield_12907":null,"customfield_11817":null,"customfield_12906":null,"customfield_12909":null,"customfield_11819":null,"customfield_12908":null,"subtasks":[],"reporter":{"self":"https://support-test.wu.ac.at/rest/api/2/user?username=aaueradmin","name":"aaueradmin","key":"aaueradmin","emailAddress":"aauer@wu.ac.at","avatarUrls":{"48x48":"https://support-test.wu.ac.at/secure/useravatar?avatarId=10122","24x24":"https://support-test.wu.ac.at/secure/useravatar?size=small&avatarId=10122","16x16":"https://support-test.wu.ac.at/secure/useravatar?size=xsmall&avatarId=10122","32x32":"https://support-test.wu.ac.at/secure/useravatar?size=medium&avatarId=10122"},"displayName":"Alexander
+        Auer Admin","active":true,"timeZone":"Europe/Vienna"},"customfield_12101":null,"customfield_12100":null,"customfield_12103":null,"customfield_12102":null,"customfield_12105":null,"customfield_12104":null,"customfield_11801":null,"customfield_11800":null,"customfield_10713":null,"customfield_11803":null,"customfield_11802":null,"customfield_11807":null,"customfield_11809":null,"customfield_11808":null,"issuetype":{"self":"https://support-test.wu.ac.at/rest/api/2/issuetype/10001","id":"10001","description":"For
+        service requests concerning one of WU''s provided services.","iconUrl":"https://support-test.wu.ac.at/secure/viewavatar?size=xsmall&avatarId=10541&avatarType=issuetype","name":"Service
+        Request","subtask":false,"avatarId":10541},"project":{"self":"https://support-test.wu.ac.at/rest/api/2/project/10000","id":"10000","key":"IT","name":"IT
+        Service Desk","avatarUrls":{"48x48":"https://support-test.wu.ac.at/secure/projectavatar?pid=10000&avatarId=10204","24x24":"https://support-test.wu.ac.at/secure/projectavatar?size=small&pid=10000&avatarId=10204","16x16":"https://support-test.wu.ac.at/secure/projectavatar?size=xsmall&pid=10000&avatarId=10204","32x32":"https://support-test.wu.ac.at/secure/projectavatar?size=medium&pid=10000&avatarId=10204"}},"customfield_13300":null,"customfield_13302":null,"customfield_13301":null,"customfield_13303":null,"customfield_10700":null,"customfield_10701":[{"name":"SD:
+        IT","self":"https://support-test.wu.ac.at/rest/api/2/group?groupname=SD%3A+IT"}],"resolutiondate":"2020-04-09T20:51:06.783+0200","customfield_10708":null,"customfield_10709":null,"watches":{"self":"https://support-test.wu.ac.at/rest/api/2/issue/TEST-1/watchers","watchCount":0,"isWatching":false},"customfield_12200":null,"customfield_12201":null,"customfield_13405":null,"customfield_13404":null,"customfield_11900":null,"customfield_11901":null,"updated":"2020-04-09T20:51:06.783+0200","description":null,"customfield_11100":null,"customfield_13401":null,"customfield_13400":null,"customfield_13403":null,"customfield_13402":null,"customfield_10800":{"self":"https://support-test.wu.ac.at/rest/api/2/customFieldOption/10700","value":"Short","id":"10700"},"customfield_10801":null,"summary":"test","customfield_10120":{"id":"1","name":"Time
+        to resolution","_links":{"self":"https://support-test.wu.ac.at/rest/servicedeskapi/request/97161/sla/1"},"completedCycles":[],"ongoingCycle":{"startTime":{"iso8601":"2020-04-09T20:50:47+0200","jira":"2020-04-09T20:50:47.873+0200","friendly":"09.04.2020
+        20:50","epochMillis":1586458247873},"breachTime":{"iso8601":"2020-04-14T20:50:48+0200","jira":"2020-04-14T20:50:48.467+0200","friendly":"14.04.2020
+        20:50","epochMillis":1586890248467},"breached":false,"paused":true,"withinCalendarHours":true,"goalDuration":{"millis":259200000,"friendly":"72h"},"elapsedTime":{"millis":18911,"friendly":"0m"},"remainingTime":{"millis":259181089,"friendly":"71h
+        59m"}}},"customfield_10000":[],"customfield_10121":{"id":"2","name":"Time
+        to first response","_links":{"self":"https://support-test.wu.ac.at/rest/servicedeskapi/request/97161/sla/2"},"completedCycles":[{"startTime":{"iso8601":"2020-04-09T20:50:47+0200","jira":"2020-04-09T20:50:47.873+0200","friendly":"09.04.2020
+        20:50","epochMillis":1586458247873},"stopTime":{"iso8601":"2020-04-09T20:51:06+0200","jira":"2020-04-09T20:51:06.784+0200","friendly":"09.04.2020
+        20:51","epochMillis":1586458266784},"breached":false,"goalDuration":{"millis":86400000,"friendly":"24h"},"elapsedTime":{"millis":18911,"friendly":"0m"},"remainingTime":{"millis":86381089,"friendly":"23h
+        59m"}}]},"customfield_10001":{"_links":{"jiraRest":"https://support-test.wu.ac.at/rest/api/2/issue/97161","web":"https://support-test.wu.ac.at/servicedesk/customer/portal/1/TEST-1","self":"https://support-test.wu.ac.at/rest/servicedeskapi/request/97161"},"requestType":{"id":"80","_links":{"self":"https://support-test.wu.ac.at/rest/servicedeskapi/servicedesk/1/requesttype/80"},"name":"Default
+        Service Request","description":"Default Service Request","helpText":"","serviceDeskId":"1","groupIds":[],"icon":{"id":"11036","_links":{"iconUrls":{"48x48":"https://support-test.wu.ac.at/secure/viewavatar?avatarType=SD_REQTYPE&size=large&avatarId=11036","24x24":"https://support-test.wu.ac.at/secure/viewavatar?avatarType=SD_REQTYPE&size=small&avatarId=11036","16x16":"https://support-test.wu.ac.at/secure/viewavatar?avatarType=SD_REQTYPE&size=xsmall&avatarId=11036","32x32":"https://support-test.wu.ac.at/secure/viewavatar?avatarType=SD_REQTYPE&size=medium&avatarId=11036"}}}},"currentStatus":{"status":"Cancelled","statusDate":{"iso8601":"2020-04-09T20:51:06+0200","jira":"2020-04-09T20:51:06.784+0200","friendly":"09.04.2020
+        20:51","epochMillis":1586458266784}}},"customfield_10122":{"id":"3","name":"Time
+        to close after resolution","_links":{"self":"https://support-test.wu.ac.at/rest/servicedeskapi/request/97161/sla/3"},"completedCycles":[],"ongoingCycle":{"startTime":{"iso8601":"2020-04-09T20:51:06+0200","jira":"2020-04-09T20:51:06.784+0200","friendly":"09.04.2020
+        20:51","epochMillis":1586458266784},"breachTime":{"iso8601":"2020-04-20T20:51:06+0200","jira":"2020-04-20T20:51:06.784+0200","friendly":"20.04.2020
+        20:51","epochMillis":1587408666784},"breached":false,"paused":false,"withinCalendarHours":true,"goalDuration":{"millis":604800000,"friendly":"168h"},"elapsedTime":{"millis":596,"friendly":"0m"},"remainingTime":{"millis":604799404,"friendly":"167h
+        59m"}}},"customfield_12301":null,"customfield_10002":[],"customfield_10123":null,"customfield_12300":null,"customfield_12302":null,"customfield_10115":null,"customfield_13625":null,"customfield_13624":null,"environment":null,"customfield_13627":null,"customfield_10118":null,"customfield_13626":null,"customfield_13629":null,"customfield_13628":"Infos
+        concerning viability of requests...","duedate":null,"comment":{"comments":[],"maxResults":0,"total":0,"startAt":0},"fixVersions":[],"customfield_10110":null,"customfield_10111":null,"customfield_13500":null,"customfield_13621":{"self":"https://support-test.wu.ac.at/rest/api/2/customFieldOption/15014","value":"Existierende/r
+        Empfänger/in","id":"15014"},"customfield_13620":null,"customfield_10113":null,"customfield_13623":null,"customfield_10114":null,"customfield_13501":null,"customfield_13622":null,"customfield_10104":null,"customfield_12404":null,"customfield_12403":null,"customfield_13613":null,"customfield_10106":null,"customfield_13616":null,"customfield_13615":null,"customfield_10108":null,"customfield_10900":null,"customfield_13618":null,"customfield_10109":null,"customfield_10901":null,"customfield_10902":null,"customfield_13619":null,"customfield_10100":null,"customfield_12400":null,"customfield_13610":null,"customfield_10101":null,"customfield_10102":null,"customfield_12402":null,"customfield_13612":null,"customfield_10103":null,"customfield_12401":null,"customfield_13611":null,"customfield_13603":null,"customfield_13602":null,"customfield_13605":null,"customfield_13604":null,"customfield_13607":null,"versions":[],"customfield_13606":null,"customfield_13609":null,"customfield_13608":null,"status":{"self":"https://support-test.wu.ac.at/rest/api/2/status/10004","description":"","iconUrl":"https://support-test.wu.ac.at/images/icons/status_generic.gif","name":"Cancelled","id":"10004","statusCategory":{"self":"https://support-test.wu.ac.at/rest/api/2/statuscategory/3","id":3,"key":"done","colorName":"green","name":"Done"}},"customfield_13960":null,"customfield_13962":null,"customfield_11300":null,"customfield_13961":null,"customfield_13601":null,"customfield_13964":null,"customfield_13600":null,"customfield_13963":null,"customfield_12503":null,"customfield_13713":null,"customfield_12502":null,"customfield_13954":null,"customfield_13715":null,"customfield_13956":null,"customfield_13714":null,"customfield_13959":null,"customfield_13716":null,"customfield_13958":null,"creator":{"self":"https://support-test.wu.ac.at/rest/api/2/user?username=aaueradmin","name":"aaueradmin","key":"aaueradmin","emailAddress":"aauer@wu.ac.at","avatarUrls":{"48x48":"https://support-test.wu.ac.at/secure/useravatar?avatarId=10122","24x24":"https://support-test.wu.ac.at/secure/useravatar?size=small&avatarId=10122","16x16":"https://support-test.wu.ac.at/secure/useravatar?size=xsmall&avatarId=10122","32x32":"https://support-test.wu.ac.at/secure/useravatar?size=medium&avatarId=10122"},"displayName":"Alexander
+        Auer Admin","active":true,"timeZone":"Europe/Vienna"},"customfield_14000":null,"customfield_14001":null,"customfield_14002":null,"customfield_13951":null,"customfield_10200":{"self":"https://support-test.wu.ac.at/rest/api/2/customFieldOption/10201","value":"2nd
+        Level","id":"10201"},"customfield_13950":null,"customfield_12501":null,"customfield_13953":null,"customfield_12500":null,"customfield_13952":null,"customfield_13702":null,"customfield_13944":null,"customfield_11402":null,"customfield_13943":null,"customfield_13701":null,"customfield_13704":null,"customfield_13946":null,"customfield_13703":null,"customfield_13945":null,"customfield_13706":null,"customfield_13948":null,"customfield_13705":null,"customfield_13947":null,"customfield_13708":null,"customfield_13949":null,"customfield_13709":null,"customfield_13940":null,"customfield_10310":null,"customfield_10311":null,"customfield_11401":null,"customfield_13942":null,"customfield_13700":null,"customfield_11400":[{"self":"https://support-test.wu.ac.at/rest/api/2/user?username=aaueradmin","name":"aaueradmin","key":"aaueradmin","emailAddress":"aauer@wu.ac.at","avatarUrls":{"48x48":"https://support-test.wu.ac.at/secure/useravatar?avatarId=10122","24x24":"https://support-test.wu.ac.at/secure/useravatar?size=small&avatarId=10122","16x16":"https://support-test.wu.ac.at/secure/useravatar?size=xsmall&avatarId=10122","32x32":"https://support-test.wu.ac.at/secure/useravatar?size=medium&avatarId=10122"},"displayName":"Alexander
+        Auer Admin","active":true,"timeZone":"Europe/Vienna"}],"customfield_13941":null,"customfield_10302":null,"customfield_13933":null,"customfield_13932":null,"customfield_12601":null,"customfield_10304":null,"customfield_10305":null,"customfield_13934":null,"customfield_12603":null,"customfield_13937":null,"customfield_13939":null,"customfield_13938":null,"workratio":-1,"created":"2020-04-09T20:50:47.530+0200","customfield_12600":null,"customfield_13931":null,"customfield_10301":null,"customfield_13930":null,"customfield_11502":null,"customfield_13922":null,"customfield_13801":null,"customfield_11501":null,"customfield_13921":null,"customfield_13800":null,"customfield_11504":null,"customfield_13803":null,"customfield_13924":null,"customfield_11503":null,"customfield_13923":null,"customfield_13802":null,"customfield_11506":null,"customfield_13926":null,"customfield_11505":null,"customfield_13925":null,"customfield_11508":null,"customfield_13928":null,"customfield_13927":null,"customfield_13929":null,"customfield_13001":{"self":"https://support-test.wu.ac.at/rest/api/2/customFieldOption/14405","value":"Place
+        book in library","id":"14405"},"customfield_13000":null,"customfield_13003":null,"customfield_13002":null,"customfield_10530":null,"customfield_10531":null,"customfield_11500":null,"customfield_13911":null,"customfield_12701":null,"customfield_10523":null,"customfield_12700":null,"customfield_13910":null,"customfield_10524":null,"customfield_13913":null,"customfield_12703":null,"customfield_10525":null,"customfield_13912":null,"customfield_12702":"a7f548e4f08c423ce93319e9537614235c67eee687b64735c7508c030c3a7e1f","attachment":[],"customfield_12705":null,"customfield_12704":null,"customfield_10528":null,"customfield_13917":null,"customfield_12707":null,"customfield_10529":null,"customfield_13916":null,"customfield_12706":null,"customfield_13918":"{\"baseGroupId\":{\"fields\":[{\"id\":\"a83f4fa7-a993-4b51-8d75-81a824c6dfe7\",\"originId\":\"a83f4fa7-a993-4b51-8d75-81a824c6dfe7\",\"name\":\"Tag\",\"type\":\"date\",\"required\":true,\"options\":[],\"showLabel\":true,\"dateType\":true,\"selectableType\":false,\"isValid\":true,\"valuePreview\":\"0002-01-01T00:00:00.000Z\",\"value\":\"0002-01-01T00:00:00.000Z\"},{\"id\":\"6c9b7a29-9a0f-417c-87f6-d6702cb288ae\",\"originId\":\"6c9b7a29-9a0f-417c-87f6-d6702cb288ae\",\"name\":\"Stunden\",\"type\":\"text\",\"required\":true,\"options\":[],\"showLabel\":true,\"dateType\":false,\"selectableType\":false,\"isValid\":true,\"valuePreview\":\"2\",\"value\":\"2\"}]}}","customfield_12708":null,"customfield_11850":null,"customfield_10400":null,"customfield_10511":null,"customfield_12932":null,"customfield_10512":null,"customfield_11600":null,"customfield_10513":null,"customfield_13902":null,"customfield_10514":null,"customfield_13901":null,"customfield_12933":null,"customfield_10515":null,"customfield_13904":null,"customfield_10516":null,"customfield_12935":null,"customfield_13903":null,"customfield_10517":null,"customfield_13906":null,"customfield_10518":null,"customfield_13905":null,"customfield_10519":null,"customfield_13908":null,"customfield_13907":null,"customfield_13909":null}}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 18:51:07 GMT
+recorded_with: VCR 5.1.0

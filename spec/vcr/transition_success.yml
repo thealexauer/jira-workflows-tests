@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://support-test.wu.ac.at/rest/api/2/issue/TEST-1/transitions
+    body:
+      encoding: UTF-8
+      string: '{"transition":{"id":"901"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic <AUTH DATA>
+  response:
+    status:
+      code: 204
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Thu, 09 Apr 2020 18:51:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      X-Arequestid:
+      - 1251x14327x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-11751636
+      Set-Cookie:
+      - JSESSIONID=2D7E57FA9E8650BD680CDE6BDF4FCACC; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BAQ2-88TF-EPN8-LT8O_ee247af0cd778e144ba7a75bf05e40d6674486ef_lin;
+        Path=/; Secure
+      X-Seraph-Loginreason:
+      - OK
+      X-Asessionid:
+      - 4x6pvu
+      X-Ausername:
+      - admin
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      - public
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Pragma:
+      - public
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 18:51:07 GMT
+recorded_with: VCR 5.1.0

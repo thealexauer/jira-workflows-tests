@@ -1,5 +1,5 @@
 require 'workflows/requests'
-
+require 'json'
 class Transition
 
   attr_accessor :name, :id
@@ -10,23 +10,21 @@ class Transition
   end
 
   def self.go(name)
-    transitions = Transition.get
-    transition = transitions.find {|x| x.name == name }
+    transition = @transitions.find {|x| x.name == name }
     return if transition.nil?
-
-    body = {"transition": {"id": "#{transition.id}"}}
-
+    body = {"transition": {"id": "#{transition.id}"}}.to_json
     Requests.post("/rest/api/2/issue/#{$issue['key']}/transitions", body)
-
-    puts $issue
-
   end
 
+  def self.get_compare_list
+    Transition.get.map {|x| x.name }  
+  end
 
 
   def self.get
     key = $issue['key']
     response = Requests.get("/rest/api/2/issue/#{key}/transitions")
-    response['transitions'].map {|x| Transition.new(x['name'], x['id'])}
+    @transitions = response['transitions'].map {|x| Transition.new(x['name'], x['id'])}
+    @transitions
   end
 end
